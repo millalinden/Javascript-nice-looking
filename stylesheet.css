@@ -1,0 +1,72 @@
+*{
+    font-family: 'Inter', sans-serif;  
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #DAE6FE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 2rem;
+}
+
+form {
+    gap: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-wrapper {
+    margin-bottom: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .userValue {
+    height: 3rem;
+    padding: 1rem;
+    width: 6rem;
+    font-size: 2rem;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .submit {
+    height: 2rem;
+    width: 5rem;
+  }
+
+  .hint {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    transition: scale 5s;
+    scale: 0;
+}
+  
+  .hint--incorrect {
+    background-color: rgb(255, 169, 64);
+    scale:1;
+  }
+
+  .hint--correct {
+    transform: scale(0);
+    transition: none; 
+}
